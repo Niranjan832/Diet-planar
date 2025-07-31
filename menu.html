@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title>Diet Plan</title>
+    <style>
+        .veg-table {
+            color: green;
+            border: 2px solid green;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .nonveg-table {
+            color: red;
+            border: 2px solid red;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .deserts-table {
+            color: brown;
+            border: 2px solid brown;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        table th, table td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .desc {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Diet Plan</h2>
+    <form>
+        <p><mark>Select the food item you want</mark></p>
+         Enter your name 
+        <input type="text">
+        Enter your age 
+        <input type="text"> 
+       Enter your contact details (phone number)
+        <input type="text"> 
+        
+
+        <table class="veg-table">
+            <tr>
+                <th>Item</th>
+                <th>Select</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Veg Starters</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Paneer 65</strong><br>
+                    <span class="desc">Crispy fried paneer cubes spiced with South Indian flavors.<br>
+                    260 kcal | 150g per serving | $7 </span>
+                </td>
+                <td><input type="checkbox" name="vegItem" value="Paneer 65"></td>
+                <td><input type="number" name="Paneer65Qty" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Mushroom 65</strong><br>
+                    <span class="desc">Batter-fried mushrooms tossed in spicy masala.<br>
+                    220 kcal | 140g per serving | $8.37</span>
+                </td>
+                <td><input type="checkbox" name="vegItem" value="Mushroom 65"></td>
+                <td><input type="number" name="Mushroom65Qty" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Veg Main course</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Paneer Biriyani</strong><br>
+                    <span class="desc">Aromatic basmati rice cooked with marinated paneer and herbs.<br>
+                    480 kcal | 300g per serving | $12.5</span>
+                </td>
+                <td><input type="checkbox" name="vegItem" value="Paneer Biriyani"></td>
+                <td><input type="number" name="PaneerBiriyaniQty" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Mushroom Pulao</strong><br>
+                    <span class="desc">Mildly spiced rice dish with mushrooms and peas.<br>
+                    410 kcal | 280g per serving | $17.8</span>
+                </td>
+                <td><input type="checkbox" name="vegItem" value="Mushroom Pulao"></td>
+                <td><input type="number" name="MushroomPulaoQty" min="1" max="10"></td>
+            </tr>
+        </table>
+
+        
+        <table class="nonveg-table">
+            <tr>
+                <th>Item</th>
+                <th>Select</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Non-Veg Starters</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Chicken 65</strong><br>
+                    <span class="desc">Spicy fried chicken bites served with curry leaves.<br>
+                    310 kcal | 180g per serving | $6.5</span>
+                </td>
+                <td><input type="checkbox" name="nonVegItem" value="Chicken 65"></td>
+                <td><input type="number" name="Chicken65Qty" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Fish Fry</strong><br>
+                    <span class="desc">Crispy shallow-fried fish with coastal spices.<br>
+                    290 kcal | 160g per serving | $9.67</span>
+                </td>
+                <td><input type="checkbox" name="nonVegItem" value="Fish Fry"></td>
+                <td><input type="number" name="FishFryQty" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Non-Veg Main course</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Chicken Biriyani(High fiber and protein)</strong><br>
+                    <span class="desc">Classic biriyani with succulent chicken pieces and rich aroma.<br>
+                    580 kcal | 350g per serving | $6.87</span>
+                </td>
+                <td><input type="checkbox" name="nonVegItem" value="Chicken Biriyani"></td>
+                <td><input type="number" name="ChickenBiriyaniQty" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Fish Pasta(High protein)</strong><br>
+                    <span class="desc">Creamy pasta tossed with grilled fish flakes.<br>
+                    430 kcal | 320g per serving | $9.08</span>
+                </td>
+                <td><input type="checkbox" name="nonVegItem" value="Fish Pasta"></td>
+                <td><input type="number" name="FishPastaQty" min="1" max="10"></td>
+            </tr>
+        </table>
+
+        <table class="deserts-table">
+            <tr>
+                <td colspan="3"><strong>Deserts</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Chocolate Lava Cake(Sugar free)</strong><br>
+                    <span class="desc">Warm chocolate cake with a molten center.<br>
+                    350 kcal | 150g per serving | $5.5</span>
+                </td>
+                <td><input type="checkbox" name="dessertItem" value="Chocolate Lava Cake"></td>
+                <td><input type="number" name="ChocolateLavaCakeQty" min="1" max="10"></td>
+        </table>
+
+        Enter your food preferences 
+        <input type="text"> 
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
